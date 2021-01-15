@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">     
+<style>
+
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ 
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ 
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{font-family: 'PT Sans', sans-serif;
+font-size:16px;
+
+}
+    
+h1,h2,h3,h4,h5,h6{
+font-family: 'Oswald', sanns-serif;
+}
+section{
+overflow:hidden;
+    padding:14px 0px;
+} 
+
+/* first menu */
+#firstContent{
+background:lightgrey;    
+}  
+#container{
+width:340px;
+margin:auto;   
+}
+#topBarWrapper{
+ overflow:hidden;
+    
+}
+#phone span{
+padding-left:5px;    
+}
+#phone i{
+    color:red;
+}
+#phone{
+width:118px;
+    float:left;
+    padding:7px 0px;
+    overflow:hidden;
+}
+#email i{
+ color:red;   
+    
+}
+ 
+#email{
+width:140px;
+float:left;
+padding:7px 0px;    
+}
+#social{
+width:80px;
+float:left;  
+} 
+#social a{
+display:block;
+float:left; 
+padding:7px 5px;
+ transition:0.5s; 
+}
+#social a:hover{
+  color:red;  
+     
+}
+/* second menu */
+
+#secondContent{
+ background:green;
+  
+}
+#bottomBarWrapper{
+display:table;
+width:100%;
+height:100%;
+}
+#logo{
+width:130px;
+float:left;
+
+    
+}
+#logo h2:hover{
+color:rgb(200,0,0)    
+}
+
+#logo h2{
+margin-top:7px;
+color:white;
+font-size:20px;    
+}
+#menu{
+width:200px;
+float:left;    
+}
+#myMenu{
+float:right;
+
+width:100%;
+ list-style-type:none; 
+}  
+#myMenu li{
+float:left;
+position:relative; 
+
+ 
+}
+#myMenu a:hover{
+  background:#bbb;
+  color:rgb(209,30,100);  
+}
+#myMenu a{
+ text-decoration:none;
+ padding:13px 4px;
+ font-size:12px;
+ font-weight:bold;
+ text-transform:uppercase;
+ display:block;  color:white; 
+ letter-spacing:-1px;
+}
+
+#myMenu li:hover #subMenu{
+transform:scaleY(1);
+transition:0.5s;
+
+}
+#myMenu li:hover  #topHeader{
+  
+}
+/* SubMenu start */
+
+#subMenu{
+
+transform:scaleY(0);
+transform-origin:top;
+transition:0.3s;
+position:absolute;
+top:40px;
+width:200px;
+left:-20px;
+background:rgb(20,100,120);
+list-style-type:none;
+padding-left:23px;
+padding-top:20px;
+}
+#subMenu li:hover:not(#none){
+ margin-left:12px; 
+   background:green;
+   color:white;
+   box-sizing:border-box; 
+}
+#subMenu li{
+ float:none;
+ transition:0.4s;
+ position:relative;   
+}
+#subMenu a{
+color:white;
+display:block;
+font-weight:900;
+}
+#subMenu li:hover #subMenuTwo{
+    transform:scaleX(1);
+    transition:0.5s;
+}
+/* third menu start*/
+#subMenuTwo{
+transition:0.3s;
+transform:scaleX(0);
+transform-origin:right;
+list-style-type:none;
+ background:rgb(0,200,0);
+ position:absolute;
+ left:-75%;
+ top:-96.9px;
+ padding:20px 10px;
+ overflow:hidden;
+    
+}
+#subMenuTwo li{
+    
+   transition:0.4s;
+}
+#subMenuTwo li:hover{
+    background:pink;
+    color:green;
+ margin-left:2px;  
+}
+#subMenuTwo li a{
+ display:block;
+ font-size:16px;
+   text-transform:lowercase;
+}
+
+/* slider start*/
+
+
+
+#sliderSection{
+margin-top:60px;
+
+background:linear-gradient(#00000075,#00000075),url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRj4BNqRf7dmCij60HZPS4muT4ibw86St7ocA&usqp=CAU);    
+backgroun-repeat:no-repeat;
+  background-size:cover;
+
+  overflow:hidden;
+}
+.sliderContent{
+width:300px;
+    
+}
+.sliderContent h1{
+padding:14px 0px 14px 7px;
+ color:rgb(209,30,100);   
+}
+.sliderContent p{
+ color:white;
+ line-height:30px;
+ font-weight:999;
+ padding-left:14px; 
+ text-align:left;  
+}
+
+.sliderButton{
+ color:white;
+ background:green;
+ border:none;
+ outline:none;
+ padding:14px 8px;
+ font-weight:999;
+ font-size:20px;
+ margin-bottom:17px;  
+ cursor:pointer;
+ border-radius:7px;   
+}
+.sliderButton:hover{
+
+ background-color:rgb(200,50,85);   
+}
+
+.sliderChanger{
+    
+width:110px;
+margin:auto;    
+}
+.sliderChanger span:first-child{
+border-color:green;    
+}
+.sliderChanger span{
+ width:20px;
+ height:30px
+ 
+ background:transparent;
+border:4px solid red;
+ float:left;
+ display:block;
+ text-align:center;
+ margin-left:13px;
+ border-radius:100%;
+ margin-bottom:16px;   
+}
+
+/* header information */
+#topHeader{
+position:fixed;
+left:0;
+border-bottom:2px solid rgb(209,30,100);
+right:0;
+top:0;  
+z-index:1;
+}
+service{
+ padding:6px 0px;   
+}    
+/* service box start */
+
+#serviceBox{
+background:rgb(22,63,100);    
+}
+
+.serviceWrapper{
+overflow:hidden;    
+}
+
+
+/* hover start */
+.serviceInbox:hover:not("#berotate"){ 
+ transform:scale(1);    
+}
+
+.serviceInbox:hover .serviceIcone i{
+ color:orange; 
+ transform:scale(1.2);  
+}   
+.serviceInbox:hover{
+transform:translateY(-12px);
+   background:rgba(0,200,0,0.7);
+   border:1px solid rgb(209,30,100); 
+}
+
+.serviceInbox:hover .serviceInfo{
+    
+  color:rgb(209,30,100);  
+}
+
+.serviceInbox:hover .serviceLink a{
+  color:rgb(209,30,100);  
+}
+
+.serviceInbox{
+transition:0.3s;
+float:left;
+margin-left:8px;
+padding:0px 2px;
+ background:rgb(209,30,100);
+ width:100px;
+ margin-top:30px;
+ margin-bottom:30px;   
+}
+
+.serviceIcone{
+ padding:15px 0px;  
+  text-align:center;  
+  transition:0.5s;
+}
+.serviceIcone i{
+font-size:40px;
+  color:white; 
+}
+.serviceInfo{
+  color:white; 
+  text-align:center; 
+  margin-bottom:15px;
+}
+.serviceInfoDetails{
+ color:white;
+ latter-spacing:-1px;
+ padding-left:6px;
+    
+}
+.serviceLink a{
+   color:white;
+   text-decoration:none; 
+  font-weight:999;
+  display:block;
+  
+}
+.serviceLink{
+text-align:center;
+padding-top:15px;
+  padding-bottom:30px;
+}
+
+/* alone service */
+
+
+
+
+
+
+
+.serviceInboxTwo{ 
+  background:rgba(0,200,0,0.7) !important;
+   border:2px solid rgb(209,30,100);
+  transform:translateY(-12px);  
+}
+.serviceInboxTwo .serviceIcone i{
+ 
+ color:orange; 
+}
+.serviceInboxTwo .serviceInfo{
+  color:rgb(209,30,100);  
+}
+
+.serviceInboxTwo .serviceLink a{
+ color:rgb(209,30,100);   
+}
+
+/* new project will be started here */
+
+
+
+
+
+#ourTeam{
+overflow:hidden;
+margin:20px 0px;
+background:rgba(120,150,120,0.5);    
+}
+
+#ourTeamWrapper{
+ overflow:hidden;  
+}
+.ourTeamImage{
+ width:120px;
+ height:300px;
+ float:left;
+  
+}
+
+.ourTeamImage img{
+width:100%;
+height:100%;
+    
+}
+.ourTeamInformation{
+  width:200px;
+  float:left;
+  box-sizing:border-box;
+  padding:3px;
+  margin-left:5px;  
+}
+.ourTeamInformationOne p{
+ text-align:justify;
+ line-height:23px;
+ font-weight:800px;   
+}
+.ourTeamInformationOne h2,p{
+    padding-bottom:8px;
+    text-align:center;
+}
+.ourTeamInformationTwo{
+  overflow:hidden;  
+}
+.ourTeamInformationTwo ul{
+    list-style-type:none;
+    width:95px;
+    float:right;
+}
+.ourTeamInformationTwo a{
+    text-decoration:none;
+    font-weight:700;
+}
+.ourTeamButton{
+ color:white;
+ background:rgb(209,30,100);
+ padding:8px 6px;
+ text-decoration:none;
+ font-weight:700;
+ text-align:center;
+ margin:10px 0px 16px 50px;
+ width:110px;
+ display:block;
+ border:none;
+ border-radius:6px;
+    
+}
+.ourTeamButton:hover{
+background:green;
+coursor:pointer;    
+    
+}
+
+/* new section start */
+
+#happyCustomer{
+overflow:hidden; background:linear-gradient(#00000078,#00000078),url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCI_72LIkfDgRYQpxpWQYN18xbCqQf4wYF5A&usqp=CAU);
+ background-size:cover;
+ background-repeat:no-repeat;
+ background-position:center cennter;   
+}
+.customerWrapper:hover{
+  border:2px solid green;
+  box-sizing:border-box;  
+}
+.customerWrapper:hover .ch{
+  color:orange;
+  font-wight:bold;
+   
+    
+}
+.customerWrapper:hover .customerBox{
+   width:108px; 
+}
+.customerWrapper{
+oveflow:hidden;    
+}
+.customerBox:last-child{
+margin-right:0px;    
+}
+.customerBox{
+ width:110px;
+ color:white;
+ text-align:center; 
+ float:left;
+ margin-right:3px;  
+}
+.customerBox .ch{
+    color:rgb(209,40,100);
+   font-size:50px; 
+}
+.customerBox h1{
+ font-size:34px;   
+}
+.customerBox p{
+ font-size:16px;   
+}
+
+
+/* contruction box start */
+
+
+#contructionInfo{
+background:rgba(102,6,212,0.6);    
+    
+}
+.contructionWrapper{
+ overflow:hidden;
+ background:rgba(100,59,200);   
+}
+.contructionBox:hover{
+box-shadow:1px 0px 9px 0px #bbb;
+transform:translateX(2px);
+    
+}
+.contructionBox:hover{
+  background:rgb(209,30,100) !important;  
+}
+
+
+.contructionBox{
+transition:0.3s;
+width:100px;
+color:white;
+margin-left:11px;
+border:1px solid green;
+background:rgba(50,255,0,0.5);
+box-shadow:4px 1px 9px 0px #00000050;
+float:left;  
+overflow:hidden; 
+}
+.contructionBoxOne img{
+    width:100%;
+    height:100%;
+}
+.contructionBoxOne{ 
+height:60px;   
+}
+.contructionBoxTwo{
+ text-align:center; 
+    
+
+}
+.contructionBoxTwo h3{
+ color:white;
+ font-weight:bold;
+ padding:0px 2px;
+ margin:14px 0px;   
+}
+.contructionBoxTwo p{
+ color:white;
+ letter-spacing:-1px;
+ line-height:20px;   
+}
+
+
+.myTittle{
+padding:14px 0px;
+text-align:center;
+width:95%;
+margin:auto;
+color:white;    
+}
+.myTittle h1{
+  color:white;
+  margin:12px 0px; 
+  position:relative; 
+}
+
+.myTittle h1:after{
+   content:"";
+   width:50px;
+   border:2px solid red; 
+   position:absolute;
+   top:35px;
+   left:50%;
+   transform:translateX(-59%);
+   
+}
+
+
+.myTittle p{
+  line-height:20px;
+ margin-bottom:15px;   
+}
+
+
+/* price planing */
+
+.priceWrapper{
+overflow:hidden;
+background:grey;    
+text-align:center;   
+}
+.pricePlan:last-child{
+    width:105px;
+
+}
+.pricePlan{
+background:lightgrey;
+padding:6px 0px 9px 0px;
+ border:1px solid lightgrey;
+ width:102px;
+float:left;
+margin-left:8px;
+box-shadow:0px 0px 9px 2px white;    
+}
+
+.pricePlan h2{
+  margin:0px 0px 9px 0px;
+  text-align:left;
+}
+#checkbox{
+     
+ padding-left:0px;
+ background:rgb(209,30,100);
+ color:white;   
+ 
+ }   
+ 
+.pricePlan h1{
+font-weight:999;
+   
+}
+.pricePlan h1 span{
+ font-size:14px;
+ padding-left:5px;   
+}
+
+.pricePlan ul{
+ list-style-type:none;   
+}
+.pricePlan ul li{
+  line-height:20px;  
+}
+.pricePlan ul li i{
+font-size:8px;
+color:rgb(209,30,100);
+}
+#aTag{
+display:block;
+width:100px;
+padding:10px 0px;
+background:rgb(209,30,100);
+border:none;
+color:white;
+font-size:15px;
+text-align:center;
+text-decoration:none;
+border-radius:7px;
+margin:9px 2px;    
+}
+#aTag:hover{
+  background:green;  
+}
+
+
+
+/* New About Iteam */
+
+#aboutIteam{
+overflow:hidden;
+position:relative;
+padding:0;
+margin:0;
+
+}
+.leftIteam{
+width:30%;
+float:left;
+height:100%;
+position:absolute;
+left:0;
+top:0;
+
+background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3S3bDXB_UAbf-7V741e5x--gLwZZ0Bz5TSA&usqp=CAU);
+background-size:cover;
+background-position:center center;
+}
+
+
+
+
+.rightIteam{
+ float:right;
+ width:70%;
+ background:#333;
+padding:14px 2px;   
+}
+
+.rightIteamOne h1{
+ color:rgb(209,30,100);
+ margin-bottom:8px;   
+    
+}
+.rightIteamOne p{
+  color:white;
+  line-height:17px;
+  margin-bottom:11px;
+  font-weight:200;  
+}
+
+.rightIteamTwo{
+ overflow:hidden; 
+}
+.rightImgCon{
+  overflow:hidden;
+  width:120px;
+  float:left;
+  margin-left:2px;  
+}
+.rightImage{
+float:left;
+width:30px;
+margin-top:9px;
+    
+}
+.rightImage i{
+font-size:35px;    
+color:#fb5700;   
+}
+.rightContent{
+font-size:16px;    
+ width:80px;
+ float:left;
+ margin-left:5px;   
+}
+.rightContent h4{
+  color:green; 
+}
+.rightContent p{
+ color:rgb(200,40,100);
+ line-height:16px;
+ font-size:13px;
+ font-weight:bold;
+};
+
+/* meeting team */
+
+.meetWrapper{
+    
+ overflow:hidden;   
+}
+.meetBox:first-child{
+margin-left:0px;       
+}
+.meetBox{
+    
+ width:105px;
+ float:left;
+ margin-left:6px;   
+}
+.meetBoxImage{
+ padding:8px 0px 0px 0px;
+ width:100%;
+ height:150px;
+ position:relative;  
+}
+.meetBoxImage img{
+width:100%;
+height:100%;    
+}
+.meetBoxContent{
+ text-align:center; 
+ border-left:1px solid grey;
+border-right:1px solid grey;
+border-bottom:1px solid grey;
+padding:0px 0px 6px 0px; 
+box-shadow:1px 1px 5px 0px; 
+}
+.meetBoxContent h1{
+font-weight:bold;    
+
+    
+}
+
+#linkDiv a:hover{
+ background:green;
+ color:white;   
+    
+}
+
+#linkDiv{
+position:absolute;
+left:10px;
+bottom:20px;    
+}
+#linkDiv a{
+display:block;
+float:left;
+margin-left:5px;
+width:18px;
+height:18px;
+background:lightgrey;
+color:white;
+text-align:center;
+border-radius:100%;
+display:grid;
+place-items:center;
+text-decoration:none;
+color:rgb(209,30,100);
+
+    
+}
+
+
+/* hover */
+#linkDiv a:first-child{
+transition:0.80s;
+opacity:0;    
+}
+#linkDiv a:nth-child(2){
+transition:0.60s;
+opacity:0;    
+}
+#linkDiv a:nth-child(3){
+transition:0.40s;
+opacity:0;    
+}
+#linkDiv a:last-child{
+transition:0.20s;
+opacity:0;    
+}
+
+
+.meetBox:hover #linkDiv a:first-child{
+    
+transform:translateY(14px);
+opacity:1;     
+}
+.meetBox:hover #linkDiv a:nth-child(2){
+
+  transform:translateY(14px);
+    opacity:1;
+}
+.meetBox:hover #linkDiv a:nth-child(3){
+
+  transform:translateY(14px);
+    opacity:1;
+}
+
+.meetBox:hover #linkDiv a:last-child{
+    
+transform:translateY(14px);
+opacity:1;     
+}
+
+
+.meetBoxContent:hover{
+box-shadow:0.5px 0.5px 3px 0px;    
+}
+#btn{
+display:grid;
+place-items:center;
+width:100%;
+    
+}
+#btn a:hover{
+ background:#bbb;   
+ color:rgb(209,30,100);   
+}
+#btn a{
+
+color:white;
+font-size:19px;
+background:#333;
+text-decoration:none;
+padding:8px 6px; 
+margin-top:15px;
+border-radius:10%;  
+font-weight:999;    
+}
+
+
+/* lyer start */
+
+
+#twoLyer{
+background:#00000013;    
+}
+.lyerWrapper{
+overflow:hidden;
+column-count:2;
+    
+}
+.lyerSingle{
+width:160px;
+float:left;
+margin-left:5px;
+position:relative; 
+margin-top:5px;  
+}
+.lyerSingle:hover .lyerContent{
+padding-bottom:14px;
+transition:0.5s;
+ background:linear-gradient(to top,black,transparent 86px); 
+}
+
+.lyerSingle img{
+width:100%;
+height:270px;
+   
+}
+
+.lyerSingle:hover #aLast{
+ transform:translateX(0px);
+ transition-delay:0.5s;
+ transition:0.5s;   
+    
+}
+.lyerContent a:first-child{
+  padding-top:8px;   
+}
+#aLast{
+color:rgb(209,30,100);
+transform:translateX(-150px);    
+}
+
+
+
+
+
+
+.lyerContent a{
+text-decoration:none;
+font-weight:700;    
+margin:1px 0px;
+text-align:center;
+display:block; 
+color:white; 
+font-size:12px;  
+}
+.lyerContent{
+
+    
+}
+.lyerDiv{
+width:100%;
+ background:linear-gradient(to top,black,transparent 70px); 
+ overflow:hidden;
+ position:absolute;    
+  bottom:4px;
+  left:0px;
+  width:100%  
+}
+.lyerContent h4{
+padding-left:9px;    
+ color:white; 
+ text-transform:uppercase;  
+}
+.lyerContent p{
+letter-spacing:-1px;
+ color:white; 
+ font-size:12px;  
+font-weight:bold;
+margin-left:-4px;
+margin-bottom:-9px;
+text-transform:lowercase;    
+}
+
+/* lastest news */
+
+
+.lastWrapper{
+    
+overflow:hidden;
+   
+}
+.lastBox{
+width:105px;
+float:left;
+margin-left:6px;  
+}
+.lastImage{
+overflow:hidden;  
+}
+.lastBox:hover .lastImage img{
+transform:scale(1.2);    
+}
+.lastImage img{
+ width:100%;
+ height:120px;
+ transition:0.5s;   
+}
+.lastContent{
+ padding-bottom:12px;   
+}
+
+
+
+.lastCtg{
+padding-bottom:5px;
+position:relative;
+overflow:hidden;   
+}
+.lastCtg a:after{
+ content:"";
+ width:10px;
+ border:2px solid red;
+  position:absolute;
+  left:56px;
+  top:9px;  
+}
+
+.lastCtg a{
+text-decoration:none;
+font-weight:700;
+display:block;
+ color:green !important;   
+}
+
+#one:hover{
+ color:red !important;   
+}
+
+.lastCtg a:first-child{
+  width:70%;
+  float:left;
+    
+}
+.lastCtg a:last-child{
+  float:right; width:30%;
+  
+} 
+
+.lastContent{
+border-left:1px solid lightgrey; 
+border-right:1px solid lightgrey; 
+border-bottom:1px solid lightgrey;    
+}
+.lastContent a{
+text-decoration:none;
+
+color:rgb(209,30,100);  
+}
+.lastContent a:hover{
+  color:green; 
+}
+.lastContent p{
+ text-align:left; 
+    
+}
+#lastA:hover{
+color:rgb(209,30,100); 
+background:black;   
+}
+#lastA{
+  background:lightgrey;
+  padding:3px 2px;
+  font-size:18px;
+  border-radius:7px;
+  color:green;  
+ font-weight:777;   
+}
+
+/* footer start */
+
+#myFooter{
+ background:black;
+ padding-top:60px;   
+}
+
+
+#fbManager{
+border-top:1px solid lightgrey;    
+}
+.fbText{
+ width:50%;
+ float:left;
+ font-weight:777;   
+  padding-top:9px;
+  color:white;  
+}
+.fbLink{
+width:50%;
+float:left;
+    
+}
+.fbUlLink{
+overflow:hidden;
+margin:0;
+padding:0;
+float:right;    
+}
+.fbUlLink li{
+ display:block;   
+}
+.fbUlLink li a{
+float:left;
+text-decoration:none;
+color:white;
+padding:9px 2px;
+
+   
+}
+.fbUlLink li a:hover{
+  color:rgb(209,30,100);  
+}
+
+.fbWrapper{overflow:hidden;}
+
+
+
+.ftWrapper{
+overflow:hidden;    
+}
+.singleBox{
+width:105px;
+float:left;    
+overflow:hidden;    
+}
+.singleBox p{
+text-align:left;    
+padding:3px 0px;
+color:white;   
+}
+.singleBox a{
+    
+text-decoration:none;
+color:white;
+font-weight:408;    
+}
+.singleBox h3{
+    
+color:white;    
+}
+.singleBoxTwo{
+overflow:hidden;
+margin:6px 0px;    
+}
+.singleBoxTwoOne i{
+  color:white;  
+}
+
+.singleBoxTwoOne{
+width:50px;
+padding-top:5px;
+margin-right:1px;
+float:left;    
+color:white;
+font-size:20px;    
+}
+.singleBoxTwoTwo{
+width:50px;
+float:left;
+color:white;
+margin-left:1px;
+}
+
+.singleBoxThree{
+    
+overflow:hidden;    
+}
+.singleBoxThreeOne  span{
+ font-size:11px;
+ font-weight:999;   
+}
+.singleBoxThreeOne i{
+background:red;    
+}
+.singleBoxThreeOne{
+    
+width:32px;
+float:left;
+margin-right:1px;
+padding-top:7px;
+color:lightgrey;    
+}
+.singleBoxThreeTwo{
+ color:white;
+width:69px;
+float:left;    
+}
+.singleBoxThreeTwo p{
+letter-spacing:-1px;
+line-height:15px;   
+margin-bottom:-7px;    
+}
+
+.singleBoxThreeTwo a{
+font-size:10px;
+font-weight:888;   
+}
+#myAbout{
+    
+padding-left:14px;    
+}
+
+.sFooterWrapper{
+overflow:hidden;  
+background:#fb5200;
+padding:36px 0px;
+z-index:1;  
+}
+.subBox:first-child{
+margin-left:0px;    
+}
+.subBox h1{
+color:white; 
+margin-bottom:19px;   
+    
+}
+.subBox{
+width:160px;
+float:left;
+margin-left:0px;    
+}
+.IpWrapper{
+position:relative;   
+}
+.IpWrapper input:first-child{
+ width:130px;   
+ display:block;
+ padding:8px 0px;
+ border-top-left-radius:20%;
+ border-bottom-left-radius:20%;
+ border:none;
+ outline:none;
+}
+.IpWrapper input:last-child{
+position:absolute;
+right:22px;
+top:-6px;
+padding:12px 0px;   
+border-radius:50%;
+color:white;
+background:green;
+border:none;
+outline:none;
+font-size:17px; 
+}
+
+.IeWrapper i:hover{
+background:rgb(209,30,100);    
+}
+.IeWrapper i{
+display:block;
+width:20px;
+height:20px;
+margin-right:15px;
+float:left;
+border-radius:100%;
+background:green;
+color:white;
+display:grid;
+place-items:center;
+    
+}
+
+
+#relativeId{
+position:relative;
+margin-bottom:-55px;
+
+}
+
+</style>        
+    </head>
+    <body>
+<header id="topHeader">
+<div id="firstContent">
+     <div id="container">
+     <div id="topBarWrapper">
+<div id="phone"><i class="fas fa-phone"></i><span>Phone:66328</span>
+</div>   
+<div id="email"><i class="fas fa-envelope-open-text"></i>Rafi@gmail.com</div>       
+ <div id="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-twitter-square"></i></i></a>
+    
+<a href="#"><i class="fab fa-instagram-square"></i></a>     
+ </div>      
+  
+     </div>
+ </div>   
+</div>
+    
+<div id="secondContent">
+    
+ <div id="container">
+   <div id="bottomBarWrapper">
+       
+<div id="logo">
+    <h2>RafiAhmed</h2>
+</div>   
+<div id="menu">
+    <ul id="myMenu">
+        <li><a href="#">home</a></li>
+        <li><a href="#">services</a>
+            
+<ul id="subMenu">
+    <li><a href="#">webDesign</a></li>
+     <li><a href="#">E-comarce</a></li>
+      <li id="none"><a href="#">Application</a>
+          
+<ul id="subMenuTwo">
+    <li><a href="#">WebApplication</a></li>
+     <li><a href="#">MobileApp</a></li>
+    <li><a href="#">Developing</a></li>
+     
+</ul>          
+          
+          
+      </li>
+       <li><a href="#">LogoMaking</a></li>
+</ul>            
+            </li>
+        <li><a href="#">about</a></li>
+         <li><a href="#">contact</a></li>
+    </ul>
+</div>      
+       
+       
+   </div>  
+     
+     
+ </div>   
+    
+</div>    
+  </header>
+
+
+
+<section id="sliderSection">
+ <div id="container">
+     <div class="sliderContent">
+      <h1>We have a inistitution to make your website..</h1> 
+      <p>I am a web-developer and i am learning programming language everyday..</p>  
+         
+    <button class="sliderButton">Work with us</button>     
+     </div>
+  <div class="sliderChanger">
+      <span></span><span></span>
+  </div>   
+ </div>   
+    
+    
+</section>
+     
+
+<section id="serviceBox">
+    <div id="container">
+    <div class="serviceWrapper">
+    
+<div class="serviceInbox">
+    <div class="serviceIcone"><i id="berotate" class="fas fa-taxi"></i></div>
+    <div class="serviceInfo"><h3>Our Main   Target is</h3></div>
+    <div class="serviceInfoDetails"><p>Our main services are web developing
+    graphings design,photo shope etc.</p></div>
+    <div class="serviceLink"><a href="#">visit to know</a></div>
+</div>    
+
+<div class="serviceInbox">
+    <div class="serviceIcone"><i class="fas fa-taxi"></i></div>
+    <div class="serviceInfo"><h3>Our Main   Target is</h3></div>
+    <div class="serviceInfoDetails"><p>Our main services are web developing
+    graphings design,photo shope etc.</p></div>
+    <div class="serviceLink"><a href="#">visit to know</a></div>
+</div>    
+
+<div class="serviceInbox serviceInboxTwo">
+    <div class="serviceIcone serviceIconeTwo"><i class="fas fa-taxi"></i></div>
+    <div class="serviceInfo"><h3>Our Main   Target is</h3></div>
+    <div class="serviceInfoDetails"><p>Our main services are web developing
+    graphings design,photo shope etc.</p></div>
+    <div class="serviceLink"><a href="#">visit to know</a></div>
+</div>    
+        
+    </div>    
+    </div>
+</section>
+     
+<section id="ourTeam">
+<div id="container">
+    <div class="ourTeamWrapper">
+        <div class="ourTeamImage">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5X6UR5B5Z6KVHakaXRwYlbQkP5Hll6wjLtw&usqp=CAU"/>   
+        </div>
+        <div class="ourTeamInformation">
+            <div class="ourTeamInformationOne">
+                <h2>Compeling Working</h2>
+                <p>We can finish your web site design withing your selected time. 
+                because we have a great knowldge about programming.
+                
+                </p>
+            </div>
+            <div class="ourTeamInformationTwo">
+                
+            <ul>
+            
+      <li><a href="#">Working</a></li>
+      <li><a href="#">risk</a></li>
+      <li><a href="#">holiday</a></li>
+      <li><a href="#">Enjoying</a></li>
+      
+            </ul> 
+            <ul>
+            
+      <li><a href="#">Playing</a></li>
+      <li><a href="#">Running</a></li>
+      <li><a href="#">learning</a></li>
+      <li><a href="#">Making</a></li>
+      
+            </ul> 
+            
+            
+               
+            </div>
+   <a  class="ourTeamButton" href="#">visit my Sit..</a>         
+        </div> 
+    </div>
+</div>
+    
+</section>   
+ <section id="happyCustomer">
+     <div id="container">
+    <div class="customerWrapper">
+
+     <div class="customerBox">
+         <h1 class="ch">
+            <i class="far fa-smile-wink"></i>
+        </h1>
+        <h1>1200</h1>
+        <p>HappyCustomer</p>
+        
+     </div>
+      <div class="customerBox">
+         <h1 class="ch">
+            <i class="far fa-smile-wink"></i>
+        </h1>
+        <h1>1200</h1>
+        <p>HappyCustomer</p>
+        
+     </div>
+      <div class="customerBox">
+         <h1 class="ch">
+            <i class="far fa-smile-wink"></i>
+        </h1>
+        <h1>1200</h1>
+        <p>HappyCustomer</p>
+        
+     </div>
+     
+    </div>     
+         
+         
+     </div>
+ </section> 
+  
+<section id="contructionInfo">
+<div id="container">
+<div class="myTittle">
+    <h1>Why Will you hire us??</h1>
+<p>We are good at making web design. we can make 11000 web site a day.we have a group of 10000 people..</p>    
+</div>    
+    <div class="contructionWrapper">
+    
+
+    
+    
+        
+    
+        <div class="contructionBox">
+        
+    <div class="contructionBoxOne">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCI_72LIkfDgRYQpxpWQYN18xbCqQf4wYF5A&usqp=CAU"/>
+    </div> 
+    <div class="contructionBoxTwo">
+        <h4>Construction Team</h4>
+        <p>We have a great deal of groups works all over the country.</p>
+    </div>      
+          </div>
+            <div class="contructionBox">
+        
+    <div class="contructionBoxOne">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3S3bDXB_UAbf-7V741e5x--gLwZZ0Bz5TSA&usqp=CAU"/>
+    </div> 
+    <div class="contructionBoxTwo">
+        <h4>Construction Team</h4>
+        <p>We have a great deal of groups works all over the country.</p>
+    </div>      
+          </div>
+            <div class="contructionBox">
+        
+    <div class="contructionBoxOne">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3ha7Y2XdFH13XyymoyQTmcMqtrDQFlm07eQ&usqp=CAU"/>
+    </div> 
+    <div class="contructionBoxTwo">
+        <h4>Construction Team</h4>
+        <p>We have a great deal of groups works all over the country.</p>
+    </div>      
+          </div>
+    </div>
+</div>
+    
+    
+    
+</section>  
+ 
+ <section>
+<div id="container">
+    <div class="priceWrapper">
+        
+<div class="myTittle">
+    <h1>Want to buy plan??</h1>
+<p>We are good at making web design. we can make 11000 web site a day.we have a group of 10000 people..</p>    
+</div>    
+        <div class="pricePlan">
+            <h2>Simple<i id="checkbox" class="fas fa-check-square"></i></h2>
+            <h1>$100<span>/day</span></h1>
+            <ul>
+                <li><i class="fas fa-check"></i>Speed2mps</li>
+                <li><i class="fas fa-check"></i>limit30gb</li>
+                <li><i class="fas fa-check"></i>service</li>
+                <li><i class="fas fa-check"></i>morningToN</li>
+                <li><i class="fas fa-check"></i>ReuredEmail</li>
+                <li><i class="fas fa-check"></i>validPwd</li>
+                <li><i class="fas fa-check"></i>KeepInMind</li>
+                
+                
+            </ul>
+<a id="aTag" href="#">Click here..</a>            
+            
+        </div>
+        <div class="pricePlan">
+            <h2>primiar<i id="checkbox" class="fas fa-check-square"></i></h2>
+            <h1>$100<span>/month</span></h1>
+            <ul>
+                <li><i class="fas fa-check"></i>Speed6mps</li>
+                <li><i class="fas fa-check"></i>limit300gb</li>
+                <li><i class="fas fa-check"></i>service</li>
+                <li><i class="fas fa-check"></i>morningToN</li>
+                <li><i class="fas fa-check"></i>ReuredEmail</li>
+                <li><i class="fas fa-check"></i>validPwd</li>
+                <li><i class="fas fa-check"></i>KeepInMind</li>
+                
+                
+            </ul>
+            <a id="aTag" href="#">Click here..</a>  
+        </div>
+        <div class="pricePlan">
+            <h2>ProP.<i id="checkbox" class="fas fa-check-square"></i></h2>
+            <h1>$100<span>/Year</span></h1>
+            <ul>
+                <li><i class="fas fa-check"></i>Speed16mps</li>
+                <li><i class="fas fa-check"></i>limit600gb</li>
+                <li><i class="fas fa-check"></i>service</li>
+                <li><i class="fas fa-check"></i>morningToN</li>
+                <li><i class="fas fa-check"></i>ReuredEmail</li>
+                <li><i class="fas fa-check"></i>validPwd</li>
+                <li><i class="fas fa-check"></i>KeepInMind</li>
+                
+                
+            </ul>
+            <a id="aTag" href="#">Click here..</a>  
+        </div>
+       
+       
+       
+       
+    </div>
+</div>    
+    
+    
+</section> 
+
+
+
+
+<section>
+<div id="aboutIteam">
+    <div class="leftIteam">
+    
+   </div> 
+    
+ <div class="rightIteam">
+     
+  <div class="rightIteamOne">
+      <h1>Our experience..</h1>
+     <p>We have been working for five year and we have acheived A lot of honour</p>
+ </div>   
+  <div class="rightIteamTwo">       
+<div class="rightImgCon">
+   <div class="rightImage">
+ <i class="fas fa-wallet"></i>  
+  </div>      
+<div class="rightContent">
+    <h4>Working</h4>
+    <p>Be honest I'll help</p>
+</div>         
+    
+</div>
+<div class="rightImgCon">
+   <div class="rightImage">
+ <i class="fas fa-wallet"></i>  
+  </div>      
+<div class="rightContent">
+    <h4>Working</h4>
+    <p>Be honest I'll help</p>
+</div>         
+    
+</div>
+<div class="rightImgCon">
+   <div class="rightImage">
+ <i class="fas fa-wallet"></i>  
+  </div>      
+<div class="rightContent">
+    <h4>Working</h4>
+    <p>Be honest I'll help</p>
+</div>         
+    
+</div>
+<div class="rightImgCon">
+   <div class="rightImage">
+ <i class="fas fa-wallet"></i>  
+  </div>      
+<div class="rightContent">
+    <h4>Working</h4>
+    <p>Be honest I'll help</p>
+</div>         
+    
+</div>
+     </div> 
+   
+ </div>   
+    
+</div>
+   
+</section>  
+<section id="meetTeam">
+    <div id="container">
+    <div style="color:rgb(209,30,100)" class="myTittle">
+    <h1 style="color:rgb(209,30,100)">Meet with our member??</h1>
+<p style="color:rgb(209,30,100)">To meet Our member click one of the links...</p>    
+</div>    
+    
+    <div class="meetWrapper">
+    
+    <div class="meetBox">
+    
+        <div class="meetBoxImage">
+        
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiQQm26wE6lGJZsoOqARzyqjHIsWkpQdJ8vA&usqp=CAU">
+            
+            
+            
+ <div id="linkDiv">
+     
+ <a href="#"><i class="fab fa-facebook-f"></i></a>
+ <a href="#"><i class="fab fa-twitter"></i></a>
+ <a href="#"><i class="fab fa-instagram"></i></a>
+ <a href="#"><i class="fab fa-whatsapp"></i></a>
+     
+     
+ </div>         
+            
+            
+        </div>
+        
+        <div class="meetBoxContent">
+       <h1>Janne dubbuk</h1>
+       <p>civil engineer of usa</p>     
+        </div>
+        
+        
+    </div>    
+        <div class="meetBox">
+        <div class="meetBoxImage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJr7EwmtuhcHnMaaHldRDyOdosSfCAUh0MYQ&usqp=CAU"/>
+            
+    <div id="linkDiv">
+     
+ <a href="#"><i class="fab fa-facebook-f"></i></a>
+ <a href="#"><i class="fab fa-twitter"></i></a>
+ <a href="#"><i class="fab fa-instagram"></i></a>
+ <a href="#"><i class="fab fa-whatsapp"></i></a>
+     
+     
+ </div>         
+
+        </div>
+        <div class="meetBoxContent">
+       <h1>Janne dubbuk</h1>
+       <p>civil engineer of usa</p>     
+        </div>
+        
+        
+    </div>       
+          <div class="meetBox">
+        <div class="meetBoxImage">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpT0or3i3Rsi74ObMspP6HlfV__XpGeKmNKg&usqp=CAU">
+            
+ <div id="linkDiv">
+     
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+ <a href="#"><i class="fab fa-twitter"></i></a>
+ <a href="#"><i class="fab fa-instagram"></i></a>
+ <a href="#"><i class="fab fa-whatsapp"></i></a>
+     
+     
+ </div>         
+                  
+        </div>
+        <div class="meetBoxContent">
+       <h1>Janne dubbuk</h1>
+       <p>civil engineer of usa</p>     
+        </div>
+
+        
+    </div> 
+          
+    </div> 
+       
+<div id="btn">
+   
+ <a href="#">Go to know!</a>
+     
+ </div>
+   
+           
+    </div>
+   
+</section>
+
+
+<section id="twoLyer">
+    <div id="container">
+        
+      <div style="color:rgb(209,30,100);margin-top:0px !important" class="myTittle">
+    <h1 style="color:rgb(209,30,100)">Our Gallary Images??</h1>
+<p style="color:rgb(209,30,100)">To meet Our member click one of the links...</p>  
+
+</div>    
+      
+<div class="lyerWrapper">
+      
+  <div class="lyerSingle">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSusOPl5BwzIVKT3Em6kWNTVpUiuJ0BI_MV1g&usqp=CAU">    
+        
+<div class="lyerDiv">
+     <div class="lyerContent">
+ <a href="#">Meet him..</a>
+     <h4>our photes..</h4>
+     <p>member click one of the links..</p>
+     <a id="aLast" href="#">To learn m..<i class="fas fa-check"></i></a>
+ </div>       
+</div>
+</div>
+<div class="lyerSingle">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMl0W4dfZ_WxrQOwUXqCcUH5Yz3Auv3d0exg&usqp=CAU">    
+        
+<div class="lyerDiv">
+     <div class="lyerContent">
+ <a href="#">Meet him..</a>
+     <h4>our photes..</h4>
+     <p>member click one of the links..</p>
+     <a id="aLast" href="#">To learn m..<i class="fas fa-check"></i></a>
+ </div>       
+</div>
+</div>
+<div class="lyerSingle">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCI_72LIkfDgRYQpxpWQYN18xbCqQf4wYF5A&usqp=CAU">    
+        
+<div class="lyerDiv">
+     <div class="lyerContent">
+ <a href="#">Meet him..</a>
+     <h4>our photes..</h4>
+     <p>member click one of the links..</p>
+     <a id="aLast" href="#">To learn m..<i class="fas fa-check"></i></a>
+ </div>       
+</div>
+</div>
+<div class="lyerSingle">
+    <img src="https://i0.wp.com/paramountmgp.com/wp-content/uploads/2018/08/Carlos-28Final-2.jpg?resize=800%2C675&ssl=1">    
+        
+<div class="lyerDiv">
+     <div class="lyerContent">
+ <a href="#">Meet him..</a>
+     <h4>our photes..</h4>
+     <p>member click one of the links..</p>
+     <a id="aLast" href="#">To learn m..<i class="fas fa-check"></i></a>
+ </div>       
+</div>
+</div>
+</div>    
+    
+  </div>
+</section> 
+
+
+
+<section>
+    
+<div id="container">
+<div style="color:rgb(209,30,100);margin-top:0px !important" class="myTittle">
+    <h1 style="color:rgb(209,30,100)">Our Latest News--</h1>
+<p style="color:rgb(209,30,100)">To meet Our member click one of the links...</p>  
+
+</div>    
+      
+    <div class="lastWrapper">
+        
+ 
+<div class="lastBox">
+ 
+ <div class="lastImage">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgp9d8OTyBCOaO-SGxfcazeS0y-5zPZzRPTQ&usqp=CAU">  
+ </div> 
+ <div class="lastContent">
+     
+ 
+ <div class="lastCtg">
+  <a id="one" href="#">Google</a><a href="#"id="one">FB..</a>    
+ </div>
+ <div class="lastInfo">
+ <a href="#"><h4>Our Latest N:</h4></a>
+ <p>here are some projects information those we did last month...</p>
+ <a id="lastA"href="#">know more-</a>    
+ </div>
+ 
+ 
+ </div> 
+   
+</div>
+<div class="lastBox">
+ 
+ <div class="lastImage">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4xDjMudQs1XcWcA1tnxscbBFkmkXa4AbsyA&usqp=CAU">  
+ </div> 
+ <div class="lastContent">
+     
+ 
+ <div class="lastCtg">
+  <a id="one" href="#">Google</a><a href="#" id="one">FB..</a>    
+ </div>
+ <div class="lastInfo">
+ <a href="#"><h4>Our Latest N:</h4></a>
+ <p>here are some projects information those we did last month...</p>
+ <a id="lastA"href="#">know more-</a>    
+ </div>
+ 
+ 
+ </div> 
+   
+</div>
+<div class="lastBox">
+ 
+ <div class="lastImage">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgp9d8OTyBCOaO-SGxfcazeS0y-5zPZzRPTQ&usqp=CAU">  
+ </div> 
+ <div class="lastContent">
+     
+ 
+ <div class="lastCtg">
+  <a id="one" href="#">Google</a><a href="#"id="one">FB..</a>    
+ </div>
+ <div class="lastInfo">
+ <a href="#"><h4>Our Latest N:</h4></a>
+ <p>here are some projects information those we did last month...</p>
+ <a id="lastA"href="#">know more-</a>    
+ </div>
+ 
+ 
+ </div> 
+   
+</div>
+        
+        
+    </div>
+</div>    
+    
+</section>
+
+
+
+
+<section id="relativeId">
+<div id="container">
+    <div class="sFooterWrapper">
+        
+<div class="subBox">
+    <h1>Subscribe Us</h1>
+    <div class="IpWrapper">
+        <input class="text" placeholder="Subscribe us.." type="text">
+  <input class="submitBtn" type="submit"/>
+     </div>
+</div>    
+        
+<div class="subBox">
+    <h1>Subscribe Us</h1>
+    <div class="IeWrapper">
+<i class="fab fa-facebook-f"></i>
+ <i class="fab fa-twitter"></i>
+ <i class="fab fa-instagram"></i>
+ <i class="fab fa-whatsapp"></i>  
+        
+     </div>
+</div>    
+                
+        
+        
+    </div>
+</div>    
+</section>
+
+
+
+
+
+<footer id="myFooter">
+    
+<div id="container">
+  
+<div class="ftWrapper">
+    
+ <div class="singleBox">
+     <h3>Powerfull</h3>
+ <p>We have new teacniqs to work dffierently. 
+   those teckiqs are being changed regularly.. 
+  </p>
+  <a href="#"><i>Go to..</i></a>
+ </div>   
+ 
+ <div class="singleBox">
+     <h3>Bangladesh</h3>
+<div class="singleBoxTwo">
+    <div class="singleBoxTwoOne">H
+       <i class="far fa-heart"></i> 
+    </div>
+    <div class="singleBoxTwoTwo">
+     Bay of Bengal
+    </div>
+     <div class="singleBoxTwoOne">H
+       <i class="far fa-heart"></i> 
+    </div>
+    <div class="singleBoxTwoTwo">
+     Bay of Bengal
+    </div>
+     <div class="singleBoxTwoOne">H
+       <i class="far fa-heart"></i> 
+    </div>
+    <div class="singleBoxTwoTwo">
+     Bay of Bengal
+    </div>
+     <div class="singleBoxTwoOne">H
+       <i class="far fa-heart"></i> 
+    </div>
+    <div class="singleBoxTwoTwo">
+     Bay of Bengal
+    </div>
+     <div class="singleBoxTwoOne">H
+       <i class="far fa-heart"></i> 
+    </div>
+    <div class="singleBoxTwoTwo">
+     Bay of Bengal
+    </div>
+</div>
+
+ </div>   
+ 
+ 
+ 
+ 
+ <div class="singleBox">
+     <h3 id="myAbout">About us</h3>
+ <div class="singleBoxThree">
+     <div class="singleBoxThreeOne">
+         <h5>1971</h5>
+         <span>We won</span>
+     </div>
+     <div class="singleBoxThreeTwo">
+         <h5>bangladesh</h5>
+         <p>Bay of Bengal</p>
+         <a href="#"><i>Link 1</i></a>
+         <a href="#"><i>link 2</i></a>
+     </div>
+ </div>
+  <div class="singleBoxThree">
+     <div class="singleBoxThreeOne">
+         <h5>1971</h5>
+         <span>We won</span>
+     </div>
+     <div class="singleBoxThreeTwo">
+         <h5>bangladesh</h5>
+         <p>Bay of Bengal</p>
+         <a href="#"><i>Link 1</i></a>
+         <a href="#"><i>link 2</i></a>
+     </div>
+ </div>
+  <div class="singleBoxThree">
+     <div class="singleBoxThreeOne">
+         <h5>1971</h5>
+         <span>We won</span>
+     </div>
+     <div class="singleBoxThreeTwo">
+         <h5>bangladesh</h5>
+         <p>Bay of Bengal</p>
+         <a href="#"><i>Link 1</i></a>
+         
+         <a href="#"><i>link 2</i></a>
+     </div>
+ </div>
+  
+ 
+ </div>   
+ 
+    
+</div>  
+    
+    
+</div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="fbManager">
+    <div id="container">
+<div class="fbWrapper">
+
+  <div class="fbText">
+@RafiAhmed 2020    
+</div>        
+ <div class="fbLink">
+     <ul class="fbUlLink">
+         <li>
+          <a href="#">Home</a> 
+           <a href="#">Phone</a>
+            <a href="#">Contact</a>
+            
+         </li>
+     </ul>
+ </div>         
+    
+</div>
+    </div>
+</div>    
+    
+</footer>
+
+  
+   
+<script>
+    
+document.querySelector(".serviceInboxTwo").onmouseover=myFunction;
+function myFunction(){
+    
+document.querySelector(".serviceIconeTwo").setAttribute("style","transform:rotate(360deg);transition:0.4s;")    
+
+};
+
+
+
+
+
+
+    
+</script>
+    </body>
+</html>
